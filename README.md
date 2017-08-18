@@ -2,7 +2,7 @@
 
 gloryjain.com
 
-##Uses:
+## Uses:
 Bootstrap - Original Templating
 Typewriter font - For the header name
 Google's Open Sans - Font
