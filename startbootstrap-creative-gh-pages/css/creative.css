@@ -470,3 +470,7 @@ body {
 .clearfix:after {
     clear: both;
 }
+#particles-js
+{
+  height:100%
+}
