@@ -48,13 +48,25 @@
             /* The image used */
             background-image: url("img/pexels-photo.jpg");
             /* Set a specific height */
-            min-height: 500px; 
+            min-height: 600px; 
             /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
+    .contact_parallax {
+            /* The image used */
+            background-image: url("img/ending.jpg");
+            /* Set a specific height */
+            min-height: 300px; 
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
     @media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
@@ -205,10 +217,11 @@
 
     </section>
 
-    <section class="bg-dark" id="projects">
+<div class="skills_parallax">
+    <section class="transparent" id="projects">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
+                    <h2 class="skills_center_white">Projects</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -217,7 +230,7 @@
                     <img src="img/onu.png" class="img-responsive" alt="" width=600>
                 </div>
                 <div class="col-md-8">
-                    <p><strong>1st place in Capital One Summit</strong> </br>My first hackathon experience! For 24 hours 
+                    <p class="skills_center_white"><strong>1st place in Capital One Summit</strong> </br>My first hackathon experience! For 24 hours 
                     </p>
                     <button type="button" class="btn btn-default">Python/Flask</button>
                     <button type="button" class="btn btn-default">Various API's</button>
@@ -226,7 +239,7 @@
 
             <div class="row">
                 <div class="col-md-8 text-left">
-                    <p><strong>Ann Arbor, MI | Research Assistant</strong> </br>As a member of the selective Michigan Research Community, I helped Professor Eric Johnsen on the project “Bubble Cavitation in Viscoelastic Media for Biomedical Applications.” Essentially, I researched how when ultrasounds are aimed towards certain tissues, how these tissues ultimately react. Extremely volatile, these tissues' bubble dynamics were simulated through an application I helped create to determine how certain factors came into effect. These simulations could potentially help create safer, more focused biomedical applications in the future that would help mitigate collateral damage caused to a patient by providing alternative cancer treatments. 
+                    <p class="skills_center_white"><strong>Ann Arbor, MI | Research Assistant</strong> </br>As a member of the selective Michigan Research Community, I helped Professor Eric Johnsen on the project “Bubble Cavitation in Viscoelastic Media for Biomedical Applications.” Essentially, I researched how when ultrasounds are aimed towards certain tissues, how these tissues ultimately react. Extremely volatile, these tissues' bubble dynamics were simulated through an application I helped create to determine how certain factors came into effect. These simulations could potentially help create safer, more focused biomedical applications in the future that would help mitigate collateral damage caused to a patient by providing alternative cancer treatments. 
                     </p>
                     <button type="button" class="btn btn-default">Python</button>
                     <button type="button" class="btn btn-default">ReactJS</button>
@@ -238,37 +251,29 @@
             </div>
 
     </section>
-
+</div>
 
    <div class="skills_parallax">
             <h2 class="skills_center_white" color="#ffffff">Skills</h2>
             <hr class="light">
             <a class="block-btn" href="glory-resume.pdf" target="_blank">
-          <img class="icon" src="img/download.png" alt="download resume" position="center">
+            <img class="icon offset-2" src="img/download.png" alt="download resume" position="center">
+           <button type="button" class="btn btn-default">Download Resume</button>
         </a>
     </div>
 
-    <section class="bg-primary" id="skills">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <h2 class="skills_center_white">Skills</h2>
-                </div>
-            </div>
-
-        <a class="block-btn" href="glory-resume.pdf" target="_blank">
-          <img class="icon" src="img/download.png" alt="download resume">
-        </a>
+    <section class="bg-primary" id="yup">
+    <div class="container">
+        </div>
     </section>
 
-
-
     <section id="contact">
-            <div class="row">
+           <div class="contact_parallax">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Let's keep in contact!</h2>
+                    <h2 class="skills_center_white">Let's keep in contact!</h2>
                     <hr class="primary">
                 </div>
-            </div>
+            
             <div class="row">
                 <div class="col-md-4 text-center">
                     <p><a href="https://github.com/gloryjain">
@@ -283,9 +288,9 @@
                 <div class="col-md-4 text-center">
                     <p><a href="https://www.linkedin.com/in/glory-jain/">
                         <i class="fa fa-linkedin-square fa-3x sr-contact text-center"></i>
-
                     </a></p>
                 </div>
+            </div>
             </div>
     </section>
 
