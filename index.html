@@ -67,6 +67,38 @@
             background-size: cover;
         }
 
+    #header,#footer{
+        min-height: 40px;
+    }
+
+    .info { min-height: 80px; }
+
+    /* layout */
+    #main-wrap {
+        /* overflow to handle inner floating block */
+        overflow: hidden;
+    }
+
+    #sidebar {
+        float: left;
+        width: 30%;
+    }
+
+    #content-wrap {
+        float: right;
+        width: 70%;
+    }
+
+    #info-wrap {
+        /* overflow to handle inner floating block */
+        overflow: hidden;
+    }
+
+    .info {
+        width: 50%;
+        float: left;
+    }
+
     @media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
@@ -269,18 +301,34 @@
     </section>
 </div>
 
-   <div class="skills_parallax">
+    <section id="skills">
+       <div class="skills_parallax">
+        <div id="header">
             <h2 class="skills_center_white" color="#ffffff">Skills</h2>
             <hr class="light">
-            <div class="row">
-            <img src="img/circle.gif" alt="circle">
+        </div>
+        <div id="main-wrap">
+            <div id="sidebar">
+                <h2 class="skills_center_white" color="#ffffff">Development</h2>
             </div>
-
-            <a class="block-btn" href="glory-resume.pdf" target="_blank">
-            <img class="icon offset-2" src="img/download.png" alt="download resume" position="center">
-           <button type="button" class="btn btn-default">Download Resume</button>
-        </a>
-    </div>
+            <div id="content-wrap">
+                <div id="info-wrap">
+                    <div class="info">
+                        <h2 class="skills_center_white" color="#ffffff">Tools</h2>
+                    </div>
+                    <div class="info">
+                        <h2 class="skills_center_white" color="#ffffff">Frameworks</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a class="block-btn" href="glory-resume.pdf" target="_blank"text-align: center;>
+            <img class="icon" src="img/download.png" alt="download resume" text-align: center;>
+            <button type="button" class="btn btn-default">Download Resume</button>
+            </a>
+        </div>
+    </section>
 
     <section class="bg-primary" id="yup">
     <div class="container">
