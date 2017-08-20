@@ -59,7 +59,7 @@
             /* The image used */
             background-image: url("img/ending.jpg");
             /* Set a specific height */
-            min-height: 300px; 
+            min-height: 1000px; 
             /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center;
@@ -110,17 +110,22 @@
     text-align: center;
 }
 
+.skills_white {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #FFF;
+}
+
 .header_in_center {
   position: absolute;
   left: 0;
   top: 25%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
+#parent_of_imgs { white-space-collapse: discard; }
 
-
-    </style>
+</style>
 
 </head>
 
@@ -164,10 +169,12 @@
     <header>
         <div class="gloryjain_header">
             <div class="header_in_center">
+                <h1 id="homeHeading" color="#fff">Glory Jain</h1>
             <div class="typewriter text-center">
-                <h1 id="homeHeading">Glory Jain</h1>
                 <hr>
-            </div>
+                <h1 id="homeHeading">CS & Business @ UMich</h1>
+            </div>        
+
             </div>
         </div>
     </header>
@@ -249,18 +256,30 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <img src="img/jobs/robogirls.png" class="img-responsive" alt="" width=500>
+                    <img src="img/jobs/pgn.png" class="img-responsive" alt="" width=500>
                 </div>
+                <div class="col-md-8 text-left">
+                    <h2>Phi Gamma Nu Business Fraternity</h2>
+                    <p><strong>Ann Arbor, MI| Professional Pledge Chair</strong> </br> 
+                        I was elected as my pledge class's professional chair. I helped my fellow business fraternity members through professional development workshops such as spearheading an internship workshop where I had industry professionals from Google, Detroit Public Health System, Uber, and varios start-ups present their experiences working in those fields. 
+                    </p>
+                </div>
+            </div>
 
+
+            <div class="row">
                 <div class="col-md-8 text-left">
                     <h2>FIRST Robotics</h2>
                     <p><strong>Cupertino, CA| Co-founder/Coach</strong> </br> •Taught fourth and fifth grade girls to build and program Lego Mindstorm robots by holding weekly workshops and providing tutorials on different components of robotics; resulted in the girls’ increased understanding of programming and robotics concepts such as loops, sensors, and debugging.
-
+                    </br> 
                     •Encouraged female participation in STEM fields by fostering curiosity and providing a safe space for young women to learn applications of engineering.
                     </p>
-                    <button type="button" class="btn btn-primary">C++</button>
-                    <button type="button" class="btn btn-primary">Matlab</button>
+                    <button type="button" class="btn btn-primary">EV3</button>
                 </div>
+                <div class="col-md-4">
+                    <img src="img/jobs/robogirls.png" class="img-responsive" alt="" width=500>
+                </div>
+
             </div>
 
     </section>
@@ -321,24 +340,101 @@
         </div>
         <div id="main-wrap">
             <div id="sidebar">
-                <h2 class="skills_center_white" color="#ffffff"  position="relative" padding-left="25px">Dev</h2>
+                <h2 class="skills_white" color="#ffffff" position="relative">Development</h2></br>
+                <ul style="list-style-type:square"  text-align="center">
+                  <li>Fluent in C++, C</li>
+                  <li>Proficient in Java, Python</li>
+                  <li>Proficient in Javascript, HTML, CSS</li>
+                  <li>Dabbled in Matlab</li>
+
+                </ul>
             </div>
             <div id="content-wrap">
                 <div id="info-wrap">
                     <div class="info">
-                        <h2 class="skills_center_white" color="#ffffff">Tools</h2>
+                        <h2 class="skills_white" color="#ffffff">Tools</h2></br>
+                             <ul style="list-style-type:square" style="font-family: 'Open Sans', sans-serif" text-align="center">
+                                    <li>GitHub/Gitlab/Version Control</li>
+                                    <li>Vim</li>
+                                    <li>Chrome DevTools</li>
+                                    <li>Postman</li>
+                                    <li>Googling/Stack Overflow</li>
+                            </ul>
                     </div>
                     <div class="info">
-                        <h2 class="skills_center_white" color="#ffffff">Frameworks</h2>
+                        <h2 class="skills_white" color="#ffffff">Frameworks</h2></br>
+                            <ul style="list-style-type:square" style="font-family: 'Open Sans', sans-serif" text-align="center">
+                                <li>ReactJS</li>
+                                <li>Flask</li>
+                                <li>Jasmine/Jest</li>
+                                <li>Bootstrap</li>
+                            </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer">
+        <div id="footer"  class="skills_center_white">
+        </br>
+        </br>
             <a class="block-btn" href="glory-resume.pdf" target="_blank" position="center";>
             <img class="icon" src="img/download.png" alt="download resume" text-align="center">
             <button type="button" class="btn btn-default">Download Resume</button>
             </a>
+    </section>
+
+    <section id="other" style="font-family: 'Open Sans', sans-serif">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Some awesome experiences!</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+
+
+        <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/linkedin.jpg" width="400">
+              <img class="img-fluid" src="img/linkedin.jpg" width="400" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Presenting to Linkedin Judges
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/myhero.png" width="250">
+              <img class="img-fluid" src="img/myhero.png" width="250" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Selfie w/ Sheryl Sandberg!
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/summit.jpg" width="400">
+              <img class="img-fluid" src="img/summit.jpg" width="400" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Capital One Summit Challenge winners
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+        
     </section>
 
     <section id="contact">
